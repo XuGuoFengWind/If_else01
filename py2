@@ -1,0 +1,13 @@
+import math
+def main():
+    print("this program finds the real solution to a quadratic\n")
+    a,b,c=eval(input("Please enter the cofficients (a,b,c): "))
+    delta =b*b-4*a*c
+    if delta < 0:
+        print("\nThe equation has no real roots!")
+    else:
+        discRoot = math.sqrt(delta)
+        root1 = (-b + discRoot) / (2 * a)
+        root2 = (-b - discRoot) / (2 * a)
+        print("\nThe solutions are:",root1, root2)
+main()
